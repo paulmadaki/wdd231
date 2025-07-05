@@ -1,0 +1,42 @@
+/* === Course Card Styles === */
+#course-list {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.course {
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.course:hover {
+  transform: scale(1.01);
+}
+
+/* Completed courses */
+.course.completed {
+  background-color: var(--completed-bg); /* Light green */
+  border-left: 5px solid green;
+}
+
+/* Incomplete courses */
+.course.incomplete {
+  background-color: var(--incomplete-bg); /* Light red/pink */
+  border-left: 5px solid red;
+}
+
+/* Common styles inside the card */
+.course h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.course p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

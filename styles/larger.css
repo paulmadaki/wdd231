@@ -1,0 +1,67 @@
+/* Responsive styles for screens up to 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.3rem;
+  }
+
+  .site-name {
+    font-size: 1rem;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .ham {
+    display: block; /*  Show hamburger */
+    margin-left: auto; /*  Push it to the right */
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  } 
+
+  nav {
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: none; /*  Hide by default */
+    flex-direction: column;
+    width: 100%;
+    background: var(--primary);
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-menu.show {
+    display: flex; /*  Show when .show is toggled by JS */
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu a {
+    color: var(--white);
+    padding: 0.75rem 1rem;
+    display: block;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
+}
