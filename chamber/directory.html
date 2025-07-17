@@ -40,6 +40,20 @@
       <button id="list">List View</button>
     </div>
     <div id="directory" class="grid-view"></div>
+    
+    <script>
+      // JavaScript for wayfinding
+  const currentPage = location.pathname.split("/").pop(); // gets index.html, directory.html
+  const wayfindingLinks = document.querySelectorAll("nav a");
+
+  wayfindingLinks.forEach(link => {
+    const href = link.getAttribute("href");
+    if (href === currentPage || (href === "index.html" && currentPage === "")) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
   </main>
 
   <footer>

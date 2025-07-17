@@ -1,11 +1,13 @@
-[
+{
+
+"members":[
   {
     "name": "IDWEB",
     "address": "2115 S Vista Avenue Boise ID 83705",
     "phone": "(208) 342-9386",
     "website": "https://idahowebsites.com",
     "logo": "idweb.png",
-    "membership": 1
+    "membership": "gold"
   },
   {
     "name": "Surge Web Design",
@@ -13,7 +15,7 @@
     "phone": "(208) 631-0640",
     "website": "https://www.surgewebdesign.com",
     "logo": "surgeweb.png",
-    "membership": 2
+    "membership": "silver"
   },
   {
     "name": "Graphiczen",
@@ -21,7 +23,7 @@
     "phone": "(208) 631-4984",
     "website": "https://graphiczen.com",
     "logo": "graphiczen.png",
-    "membership": 3
+    "membership": "gold"
   },
 
   {
@@ -30,7 +32,7 @@
   "phone": "(208) 461-5070",
   "website": "https://www.peppershock.com",
   "logo": "peppershock.png",
-  "membership": 4
+  "membership": "silver"
 },
 
 {
@@ -39,7 +41,7 @@
   "phone": "(208) 488-5810",
   "website": "https://flashtechnicalservices.com",
   "logo": "flashtech.png",
-  "membership": 5
+  "membership": "gold"
 },
 {
   "name": "Metro Express Car Wash",
@@ -47,7 +49,7 @@
   "phone": "(208) 888-4073",
   "website": "https://www.metroexpresscarwash.com",
   "logo": "metroexpress.png",
-  "membership": 6
+  "membership": "silver"
 },
 {
   "name": "Roaring Springs",
@@ -55,8 +57,9 @@
   "phone": "(208) 884-8842",
   "website": "https://www.roaringsprings.com",
   "logo": "roaringsprings.png",
-  "membership": 7
+  "membership": "gold"
 }
 
   
 ]
+}

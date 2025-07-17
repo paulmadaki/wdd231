@@ -1,0 +1,70 @@
+/* styles/nav-home.css */
+
+nav {
+  position: relative;
+  background-color: #003366;
+}
+
+#menuBtn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+ /* padding: 1rem;*/
+  cursor: pointer;
+  display: block;
+}
+
+#navLinks {
+  display: none;
+  flex-direction: column;
+  background-color: #003366;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+#navLinks.open {
+  display: flex;
+}
+
+#navLinks li {
+  list-style: none;
+  border-bottom: 1px solid #003366;
+}
+
+#navLinks a {
+  display: block;
+  /*padding: 1rem;*/
+  color: white;
+  text-decoration: none;
+  text-align: left;
+}
+
+
+@media screen and (min-width: 768px) {
+  #menuBtn {
+    display: none;
+  }
+
+  #navLinks {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    justify-content: flex-start;
+  }
+
+  #navLinks li {
+    border: none;
+  }
+
+  #navLinks a {
+    /*padding: 1rem; */
+    color: white;
+  }
+}

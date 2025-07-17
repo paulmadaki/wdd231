@@ -1,10 +1,10 @@
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   background-color: #003366;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
 }
 
 #menuBtn {
@@ -45,15 +45,17 @@ nav {
     flex-direction: column;
     background-color: #003366;
     position: absolute;
-    top: 60px;
-    right: 1rem;
+    top: 200px;
+    left: 1rem;
     width: 200px;
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
   }
 
   #navLinks.show {
     display: flex;
+    
   }
 }

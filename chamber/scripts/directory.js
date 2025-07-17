@@ -34,7 +34,8 @@ async function getMembers() {
     const response = await fetch("data/members.json");
     if (!response.ok) throw new Error("Failed to fetch JSON");
 
-    const members = await response.json();
+    const data = await response.json();
+    const members = data.members;
     displayMembers(members);
   } catch (error) {
     console.error("Error loading members:", error);

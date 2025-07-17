@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="welcome to the Otukpo Chamber of Commerce, Discover events, weather, and local businesses and highlights.">
+  <meta name="author" content="Paul Ali">
+
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="Paul's Web development assignment portal">
+  <meta property="og:description" content="WDD 231 - Web Frontend Development">
+  <meta property="og:url" content="https://paulmadaki.github.io/wdd231/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/paulmadaki/wdd231/main/images/paul.jpg">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/index.css">
+
+  <title>Otukpo Chamber of Commerce - Home</title>
+</head>
+<body>
+  <header>
+    <h1>Otukpo Chamber of Commerce</h1>
+    <nav>
+      <button id="menuBtn">☰</button>
+      <ul id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/nigerian-market.jpg" loading="lazy" alt="Community of Otukpo">
+    <div class="hero-text">
+      <h2>Connecting Otukpo's Businesses and Community</h2>
+      <p>Supporting local businesses and growing our community</p>
+      <a href="join.html" class="cta-button">Join the Chamber</a>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events">
+    <h3>Upcoming Events</h3>
+    <ul>
+      <li><strong>Business Networking Night:</strong> July 25 at 6 PM</li>
+      <li><strong>Local Products Expo:</strong> August 10 at 9 AM</li>
+      <li><strong>Monthly Member Meetup:</strong> August 15 at 5 PM</li>
+    </ul>
+  </section>
+
+  <!-- Weather Section -->
+  <section id="weather">
+    <h3>Current Weather in Otukpo</h3>
+    <p><strong>Temperature:</strong> <span id="current-temp"></span>°C</p>
+    <p><strong>Conditions:</strong> <span id="weather-desc"></span></p>
+    <div id="forecast">
+      <!-- 3-day forecast goes here -->
+    </div>
+  </section>
+
+  <!-- Spotlights Section -->
+  <section id="spotlights">
+    <h3>Business Spotlights</h3>
+    <div class="spotlight-container">
+      <!-- JS will inject 2–3 spotlight cards here -->
+    </div>
+  </section>
+
+  <script>
+  const currentPage = location.pathname.split("/").pop(); // gets index.html, directory.html, etc.
+  const wayfindingLinks = document.querySelectorAll("nav a");
+
+  wayfindingLinks.forEach(link => {
+    const href = link.getAttribute("href");
+    if (href === currentPage || (href === "index.html" && currentPage === "")) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</main>
+
+
+   
+  <footer>
+    <p>© <span id="year"></span> Paul Ali | WDD 231 Class Project | <span id="lastModified"></span></p>
+    <p>Contact us: polsaint4@gmail.com</p>
+  </footer>
+
+  <script src="scripts/nav.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/spotlights.js"></script>
+</body>
+</html>
