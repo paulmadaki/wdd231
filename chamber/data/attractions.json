@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Federal University of Health sciences",
+    "image": "images/federal-uni2.webp",
+    "address": "Otada, Otukpo, Benue State, Nigeria",
+    "description": "A leading institution of higher education offering a wide range of academic programs."
+
+  },
+  {
+    "name": "Joy fm Otukpo",
+    "image": "images/joy-fm-otukpo2.webp",
+    "address": "Along Markurdi road Otukpo, Benue State, Nigeria",
+    "description": "A radio broadcasting station with a strong local presence."
+
+  },
+  {
+    "name": "local Government Secretariat",
+    "image": "images/local-gov-sec2.webp",
+    "address": "Secretariat road Otukpo, Benue State, Nigeria",
+    "description": "A government agency responsible for managing local government services."
+  },
+  {
+    "name": "Ochacho Hotel",
+    "image": "images/ochacho-hotel2.webp",
+    "address": "David mark way, Otukpo",
+    "description": "A comfortable hotel with a modern design and amenities."
+  },
+  {
+    "name": "Ochidoma Palace",
+    "image": "images/ochidoma-palace2.webp",
+    "address": "Oba Street, Otukpo Benue State, Nigeria",
+    "description": "A beautiful palace with a rich history and stunning architecture."
+  },
+  {
+    "name": "Otukpo Rice Mill",
+    "image": "images/otukpo-rice-mill2.webp",
+    "address": "Rice Mill Rd, Otukpo Benue State, Nigeria",
+    "description": "A historic rice mill that still produces quality rice."
+  },
+  {
+    "name": "Otukpo Golf Club",
+    "image": "images/otukpo-golf2.webp",
+    "address": "Akpagade, Otukpo Benue State, Nigeria",
+    "description": "An outdoor recreational facility for golf enthusiasts."
+  },
+  {
+    "name": "Otukpo Main market",
+    "image": "images/otukpo-market2.webp",
+    "address": "Main Market, Otukpo Benue State, Nigeria",
+    "description": "A bustling marketplace with a wide variety of goods and services."
+  }
+]
+

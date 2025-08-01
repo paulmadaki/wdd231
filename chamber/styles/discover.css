@@ -1,0 +1,116 @@
+/* Hide close button by default */
+#close {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+/* Show close button only when nav is open */
+#navLinks.show #close {
+  display: block;
+}
+
+/* Force hide on large screens regardless */
+@media (min-width: 1025px) {
+  #close {
+    display: none !important;
+  }
+}
+
+
+  
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.cards {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fefefe;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.cards figure img {
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h";
+}
+
+
+/* Assign each card a grid area by order */
+.card:nth-child(1) { grid-area: a; }
+.card:nth-child(2) { grid-area: b; }
+.card:nth-child(3) { grid-area: c; }
+.card:nth-child(4) { grid-area: d; }
+.card:nth-child(5) { grid-area: e; }
+.card:nth-child(6) { grid-area: f; }
+.card:nth-child(7) { grid-area: g; }
+.card:nth-child(8) { grid-area: h; }
+
+
+
+/* Tablet: 2 columns layout */
+@media (min-width: 641px) {
+  .cards {
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+  }
+}
+
+/* Desktop: 4 columns layout */
+@media (min-width: 1025px) {
+  .cards {
+    grid-template-areas:
+      "a b c d"
+      "e f g h";
+  }
+
+  /* Hover image effect on large screens only */
+  .card figure img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+/* Medium screen (tablet) */
+@media (min-width: 641px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+/* Large screen (desktop) */
+@media (min-width: 1025px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+}
+
+.sidebar {
+  background: #e3f3ff;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: bold;
+  border-left: 4px solid #0077cc; 
+}

@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Directory of local businesses for Otukpo Chamber of Commerce">
+  <meta name="description" content="welcome to the Otukpo Chamber of Commerce, discover the best of Otukpo: local businesses, historic landmarks, events, and more. Explore what makes Otukpo a vibrant place to live, work, and visit ">
   <meta name="author" content="Paul Ali">
 
   <!-- Social Media Meta Tags -->
   <meta property="og:title" content="Paul's Web development assignment portal">
   <meta property="og:description" content="WDD 231 - Web Frontend Development">
-  <meta property="og:url" content="https://paulmadaki.github.io/wdd231/">
+  <meta property="og:url" content="https://paulmadaki.github.io/wdd231/chamber/discover.html">
   <meta property="og:image" content="https://raw.githubusercontent.com/paulmadaki/wdd231/main/images/paul.jpg">
 
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/discover.css">
 
-  <title>Otukpo Chamber of Commerce</title>
+
+  <title>Otukpo Local Life | Events, Places, and Opportunities.</title>
 </head>
 <body>
   <header>
@@ -25,43 +28,47 @@
     <nav>
       <button id="menuBtn">☰</button>
       <ul id="navLinks">
+        <li><button id="close" aria-label="Close Menu">X</button></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
-        <li><a href="discover.html">Discover</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Business Directory</h2>
-    <div class="view-toggle">
-      <button id="grid">Grid View</button>
-      <button id="list">List View</button>
-    </div>
-    <div id="directory" class="grid-view"></div>
-    
-    <script>
-      // JavaScript for wayfinding
-  const currentPage = location.pathname.split("/").pop(); // gets index.html, directory.html
-  const wayfindingLinks = document.querySelectorAll("nav a");
+    <aside id="visit-message" class="sidebar"></aside>
+    <h1>Discover Otukpo</h1>
+    <div id="cards" class="cards"></div>
 
-  wayfindingLinks.forEach(link => {
-    const href = link.getAttribute("href");
-    if (href === currentPage || (href === "index.html" && currentPage === "")) {
-      link.classList.add("active");
-    }
-  });
-</script>
 
-  </main>
+  
 
+
+
+  
+
+  
+
+  
+
+</main>
+
+
+   
   <footer>
     <p>© <span id="year"></span> Paul Ali | WDD 231 Class Project | <span id="lastModified"></span></p>
     <p>Contact us: polsaint4@gmail.com</p>
   </footer>
 
-  <script src="scripts/directory.js"></script>
-  <script src="scripts/nav.js"></script>
+  <script src="scripts/discover.js"></script>
+  
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+  </script>
+
+
 </body>
 </html>
