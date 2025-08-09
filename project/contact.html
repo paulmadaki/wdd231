@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Solar Solutions">
+  <meta name="author" content="Paul Ali">
+  <meta property="og:title" content="Contact Us">
+  <meta property="og:description" content="Send us a message or request a quote">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles2/style.css">
+  <title>Contact | Solar Solutions</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">☀️ Solar Solutions</div>
+      <button id="menu-toggle" aria-label="open navigation menu">☰</button>
+      <button id="menu-close" aria-label="close navigation menu">X</button>
+
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <form action="form-action.html" method="GET">
+      <label for="name"> first Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="Name"> second Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="address">Your address:</label>
+      <input type="text" id="address" name="address" required>
+    
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Paul Ali</p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* =======================
+   Base Styles (Mobile First)
+======================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header & Navigation */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 1em;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: none; /* hidden by default on mobile */
+  flex-direction: column;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Menu Buttons */
+#menu-toggle,
+#menu-close {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+}
+
+#menu-toggle {
+  display: block; /* visible on mobile */
+}
+
+#menu-close {
+  display: none;
+  margin-bottom: 1em;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+/* Show nav when open */
+nav.nav-open ul {
+  display: flex;
+}
+
+nav.nav-open #menu-toggle {
+  display: none;
+}
+
+nav.nav-open #menu-close {
+  display: block;
+}
+
+/* Main Content */
+main {
+  padding: 1em;
+}
+
+/* Hero Section (Mobile) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  background-color: white;
+  margin-bottom: 2em;
+}
+
+.hero-text h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.cta-button {
+  background-color: #f9a825;
+  color: white;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Features Section */
+.features {
+  padding: 1em;
+  background-color: #e3f2fd;
+}
+
+.features h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+}
+
+/* Product Card */
+.product-card {
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 2em;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 20px;
+  cursor: pointer;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #222;
+  color: white;
+}
+
+/* =======================
+   Larger Screens (Tablet & Desktop)
+======================= */
+@media (min-width: 769px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  #menu-toggle,
+  #menu-close {
+    display: none;
+  }
+
+  main {
+    padding: 2em;
+  }
+
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    gap: 2em;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    width: auto;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+}

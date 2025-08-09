@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Home Solar Basic",
+    "capacity": "2 kW",
+    "price": "$2,500",
+    "description": "Perfect for small apartments or backup power."
+  },
+  {
+    "id": 2,
+    "name": "Home Solar Plus",
+    "capacity": "4 kW",
+    "price": "$4,800",
+    "description": "Ideal for small to medium-sized homes."
+  },
+  {
+    "id": 3,
+    "name": "Home Solar Max",
+    "capacity": "6 kW",
+    "price": "$6,900",
+    "description": "Supports higher loads like fridges, TVs, and fans."
+  },
+  {
+    "id": 4,
+    "name": "Community Solar Plan",
+    "capacity": "Shared Access",
+    "price": "Starts at $500",
+    "description": "Pay monthly to share solar from a neighborhood hub."
+  },
+  {
+    "id": 5,
+    "name": "Battery Backup Lite",
+    "capacity": "1.5 kWh",
+    "price": "$1,000",
+    "description": "Stores power for use during night or outages."
+  },
+  {
+    "id": 6,
+    "name": "Battery Backup Pro",
+    "capacity": "3.5 kWh",
+    "price": "$1,900",
+    "description": "For longer storage and emergency use."
+  },
+  {
+    "id": 7,
+    "name": "Solar Financing (12 months)",
+    "capacity": "N/A",
+    "price": "$100/month",
+    "description": "Spread your payments across a year with no interest."
+  },
+  {
+    "id": 8,
+    "name": "Solar Panel Maintenance",
+    "capacity": "N/A",
+    "price": "$150/year",
+    "description": "Annual cleaning and efficiency checkup."
+  },
+  {
+    "id": 9,
+    "name": "Installation Only",
+    "capacity": "N/A",
+    "price": "$500 flat",
+    "description": "For customers who already own solar equipment."
+  },
+  {
+    "id": 10,
+    "name": "Solar Water Pump Kit",
+    "capacity": "1 HP",
+    "price": "$800",
+    "description": "Great for farms or rural homes needing irrigation."
+  },
+  {
+    "id": 11,
+    "name": "Solar Street Light",
+    "capacity": "50W",
+    "price": "$250",
+    "description": "Auto on/off street light for community or driveway."
+  },
+  {
+    "id": 12,
+    "name": "Solar Charging Station",
+    "capacity": "Multiple Devices",
+    "price": "$350",
+    "description": "Power bank with solar input. Ideal for mobile charging."
+  },
+  {
+    "id": 13,
+    "name": "Mobile Solar Backpack",
+    "capacity": "15W",
+    "price": "$90",
+    "description": "Charge devices on the go with this waterproof backpack."
+  },
+  {
+    "id": 14,
+    "name": "Solar for Schools",
+    "capacity": "10 kW",
+    "price": "$15,000",
+    "description": "Help power classrooms and reduce school energy bills."
+  },
+  {
+    "id": 15,
+    "name": "Mini Off-Grid Kit",
+    "capacity": "1 kW",
+    "price": "$1,800",
+    "description": "All-in-one solution for cabins or off-grid homes."
+  }
+]
